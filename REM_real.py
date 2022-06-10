@@ -5,7 +5,7 @@ from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 from REM import REM
 
 #Ecoli
-Data = np.genfromtxt('data/ecoli.csv', delimiter = ",")
+Data = np.genfromtxt('Data/ecoli.csv', delimiter = ",")
 X = Data[:, :-1]
 y = Data[:, -1]
 
@@ -47,7 +47,7 @@ with open('REM_real.csv', 'a') as f:
 
 
 #Iris
-Data = np.genfromtxt('data/iris.csv', delimiter = ",")
+Data = np.genfromtxt('Data/iris.csv', delimiter = ",")
 X = Data[:, :-1]
 y = Data[:, -1]
 
@@ -90,7 +90,7 @@ with open('REM_real.csv', 'a') as f:
 
 
 #Wine
-Data = np.genfromtxt('data/wine.csv', delimiter = ",")
+Data = np.genfromtxt('Data/wine.csv', delimiter = ",")
 X = Data[:, :-1]
 y = Data[:, -1]
 
@@ -133,7 +133,7 @@ with open('REM_real.csv', 'a') as f:
 
 
 #Seeds
-Data = np.genfromtxt('data/seeds.csv', delimiter = ",")
+Data = np.genfromtxt('Data/seeds.csv', delimiter = ",")
 X = Data[:, :-1]
 y = Data[:, -1]
 
@@ -177,7 +177,7 @@ with open('REM_real.csv', 'a') as f:
 
 
 #G2128
-Data = np.genfromtxt('data/G2.csv', delimiter = ",")
+Data = np.genfromtxt('Data/G2.csv', delimiter = ",")
 X = Data[:, :-1]
 y = Data[:, -1]
 
@@ -219,7 +219,7 @@ with open('REM_real.csv', 'a') as f:
 
 
 #Satellite
-Data = np.genfromtxt('data/satellite.csv', delimiter = ",")
+Data = np.genfromtxt('Data/satellite.csv', delimiter = ",")
 X = Data[:, :-1]
 y = Data[:, -1]
 
