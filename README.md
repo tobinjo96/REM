@@ -28,7 +28,7 @@ Cluster = REM(criteria = "all", bandwidth = "spherical")
 # REM's fit method produces a decision graph from which exemplars are selected. 
 Cluster.fit(X)
 ```
-![REM decision graph on Blobs data set](Blobs_decision.png)
+![REM decision graph on Blobs data set](Blobs_Decision.png)
 ```python
 #REM prompts selection of which decision graph to use, 1 for left and 2 for right. 
 
