@@ -1,5 +1,5 @@
 """Gaussian Mixture Model."""
-#Modified Code from Scikit-Learn Mixture Library. Attribution below. 
+#Modified Code from Scikit-Learn Mixture Library. Attribution for the authors of scikit-learn is below. 
 # Author: Wei Xue <xuewei4d@gmail.com>
 # Modified by Thierry Guillemot <thierry.guillemot.work@gmail.com>
 # License: BSD 3 clause
