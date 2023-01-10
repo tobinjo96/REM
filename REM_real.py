@@ -2,7 +2,7 @@ import numpy as np
 import csv
 from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 
-from REM import REM
+import REM
 
 #Ecoli
 Data = np.genfromtxt('Data/ecoli.csv', delimiter = ",")
@@ -126,9 +126,9 @@ icl_nmi = normalized_mutual_info_score(icl_y.astype(int), y)
 
 with open('REM_real.csv', 'a') as f:
   w = csv.writer(f)
-  w.writerow(['wine', 'aic', bndwk, aic_nc, aic_ari, aic_nmi, t2 - t1])
-  w.writerow(['wine', 'bic', bndwk, bic_nc, bic_ari, bic_nmi, t2 - t1])
-  w.writerow(['wine', 'icl', bndwk, icl_nc, icl_ari, icl_nmi, t2 - t1])
+  w.writerow(['wine', 'aic', bndwk, aic_nc, aic_ari, aic_nmi])
+  w.writerow(['wine', 'bic', bndwk, bic_nc, bic_ari, bic_nmi])
+  w.writerow(['wine', 'icl', bndwk, icl_nc, icl_ari, icl_nmi])
 
 
 
@@ -169,9 +169,9 @@ icl_nmi = normalized_mutual_info_score(icl_y.astype(int), y)
 
 with open('REM_real.csv', 'a') as f:
   w = csv.writer(f)
-  w.writerow(['seeds', 'aic', aic_nc, aic_ari, aic_nmi, t2 - t1])
-  w.writerow(['seeds', 'bic', bic_nc, bic_ari, bic_nmi, t2 - t1])
-  w.writerow(['seeds', 'icl', icl_nc, icl_ari, icl_nmi, t2 - t1])
+  w.writerow(['seeds', 'aic', aic_nc, aic_ari, aic_nmi])
+  w.writerow(['seeds', 'bic', bic_nc, bic_ari, bic_nmi])
+  w.writerow(['seeds', 'icl', icl_nc, icl_ari, icl_nmi])
 
 
 
@@ -213,9 +213,9 @@ icl_nmi = normalized_mutual_info_score(icl_y.astype(int), y)
 
 with open('REM_real.csv', 'a') as f:
   w = csv.writer(f)
-  w.writerow(['G2', 'aic', aic_nc, aic_ari, aic_nmi, t2 - t1])
-  w.writerow(['G2', 'bic', bic_nc, bic_ari, bic_nmi, t2 - t1])
-  w.writerow(['G2', 'icl', icl_nc, icl_ari, icl_nmi, t2 - t1])
+  w.writerow(['G2', 'aic', aic_nc, aic_ari, aic_nmi])
+  w.writerow(['G2', 'bic', bic_nc, bic_ari, bic_nmi])
+  w.writerow(['G2', 'icl', icl_nc, icl_ari, icl_nmi])
 
 
 #Satellite
@@ -254,9 +254,9 @@ icl_nmi = normalized_mutual_info_score(icl_y.astype(int), y)
 
 with open('REM_real.csv', 'a') as f:
   w = csv.writer(f)
-  w.writerow(['satellite', 'aic', aic_nc, aic_ari, aic_nmi, t2 - t1])
-  w.writerow(['satellite', 'bic', bic_nc, bic_ari, bic_nmi, t2 - t1])
-  w.writerow(['satellite', 'icl', icl_nc, icl_ari, icl_nmi, t2 - t1])
+  w.writerow(['satellite', 'aic', aic_nc, aic_ari, aic_nmi])
+  w.writerow(['satellite', 'bic', bic_nc, bic_ari, bic_nmi])
+  w.writerow(['satellite', 'icl', icl_nc, icl_ari, icl_nmi])
 
 
 
