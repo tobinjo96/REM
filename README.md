@@ -88,3 +88,8 @@ REM currently implements the overlap computation contained in the MixSim package
 ## Experiments
 
 To evaluate performance on the classification datasets included in our work, run `python REM_real.py`. The results will be saved to `REM_real.csv`. 
+
+
+## Update 11/01
+
+Work is ongoing to improve the REM library. In the coming months, the function from the R library MixSim will be incorporated natively in Python. Further improvements to function structure, and input and output processing to improve comparitability with scikit-learn are in train.
